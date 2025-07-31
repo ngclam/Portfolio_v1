@@ -9,8 +9,8 @@ const Contact = () => {
   const contactRef = useRef()
 
   return (
-    <section id="contact" ref={contactRef} className="py-20 px-4 bg-black/20">
-      <div className="max-w-4xl mx-auto">
+    <section id="contact" ref={contactRef} className="py-20 px-4 bg-black/20 animated-bg contact-bg">
+      <div className="max-w-4xl mx-auto relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
             Liên hệ với tôi

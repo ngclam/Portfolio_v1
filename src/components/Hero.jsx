@@ -57,8 +57,8 @@ const Hero = () => {
   }
 
   return (
-    <section id="home" ref={heroRef} className="min-h-screen flex items-center justify-center px-4 pt-20">
-      <div className="text-center max-w-4xl mx-auto">
+    <section id="home" ref={heroRef} className="min-h-screen flex items-center justify-center px-4 pt-20 animated-bg hero-bg">
+      <div className="text-center max-w-4xl mx-auto relative z-10">
         <h1 className="hero-title text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
           Xin chào, tôi là Vassco
         </h1>

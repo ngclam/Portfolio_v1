@@ -23,8 +23,8 @@ const Skills = () => {
   ]
 
   return (
-    <section id="skills" ref={skillsRef} className="py-20 px-4 bg-black/20">
-      <div className="max-w-6xl mx-auto">
+    <section id="skills" ref={skillsRef} className="py-20 px-4 bg-black/20 animated-bg skills-bg">
+      <div className="max-w-6xl mx-auto relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
             Kỹ năng chuyên môn
@@ -35,7 +35,7 @@ const Skills = () => {
           {skills.map((skill, index) => {
             const IconComponent = skill.icon
             return (
-              <div key={index} className="p-6 bg-white/5 rounded-xl backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all duration-300 group">
+              <div key={index} className="p-6 bg-white/5 rounded-xl backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all duration-300 group hover:scale-105">
                 <div className="flex items-center mb-4">
                   <IconComponent className="text-3xl mr-3 group-hover:scale-110 transition-transform duration-300" 
                     style={{ color: skill.color.replace('bg-', '').replace('-500', '') === 'blue' ? '#3B82F6' :
@@ -47,13 +47,13 @@ const Skills = () => {
                   />
                   <div className="flex-1">
                     <div className="flex justify-between items-center">
-                      <h3 className="text-xl font-semibold">{skill.name}</h3>
-                      <span className="text-sm text-gray-400">{skill.level}</span>
+                      <h3 className="text-xl font-semibold group-hover:text-white transition-colors duration-300">{skill.name}</h3>
+                      <span className="text-sm text-gray-400 group-hover:text-gray-300 transition-colors duration-300">{skill.level}</span>
                     </div>
                   </div>
                 </div>
-                <div className="w-full bg-gray-700 rounded-full h-3">
-                  <div className={`h-3 rounded-full ${skill.color} transition-all duration-1000 ease-out`} style={{ width: skill.level }}></div>
+                <div className="w-full bg-gray-700 rounded-full h-3 overflow-hidden">
+                  <div className={`h-3 rounded-full ${skill.color} transition-all duration-1000 ease-out transform group-hover:scale-x-105`} style={{ width: skill.level }}></div>
                 </div>
               </div>
             )

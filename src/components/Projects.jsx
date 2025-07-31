@@ -25,8 +25,8 @@ const Projects = () => {
   ]
 
   return (
-    <section id="projects" ref={projectsRef} className="py-20 px-4">
-      <div className="max-w-6xl mx-auto">
+    <section id="projects" ref={projectsRef} className="py-20 px-4 animated-bg projects-bg">
+      <div className="max-w-6xl mx-auto relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
             Dự án nổi bật

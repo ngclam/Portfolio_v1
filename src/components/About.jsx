@@ -9,8 +9,8 @@ const About = () => {
   const aboutRef = useRef()
 
   return (
-    <section id="about" ref={aboutRef} className="py-20 px-4">
-      <div className="max-w-6xl mx-auto">
+    <section id="about" ref={aboutRef} className="py-20 px-4 animated-bg about-bg">
+      <div className="max-w-6xl mx-auto relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
             Giới thiệu về tôi
