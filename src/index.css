@@ -1,6 +1,6 @@
 @import "tailwindcss";
-@import "./background-animations.css";
 
+@import "./background-animations.css";
 /* Custom Smooth Scroll */
 html {
   scroll-behavior: smooth;
